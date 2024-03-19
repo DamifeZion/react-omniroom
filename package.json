@@ -11,6 +11,7 @@
   "homepage": "https://github.com/DamifeZion/react-omniroom",
   "description": "React Omniroom is a lightweight, customizable React component that provides a dynamic navigation bar for web applications. It enhances user experience by maximizing screen real estate.",
   "license": "MIT",
+  "keywords": ["omniroom", "react", "navigation", "headroom", "footroom", "sticky", "sticky navbar", "dynamic navigation"],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

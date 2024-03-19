@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 
 
-export const HeadRoom = ({ children, ...props }: OmniRoomProps) => {
+export const HeadRoom = ({ children, hideDistance = "28", className, hiddenClassNameStyle }: OmniRoomProps) => {
 	const [lastScrollTop, setLatScrollTop] = useState(0);
 	const [isHidden, setIsHidden] = useState(false);
 
@@ -30,9 +30,9 @@ export const HeadRoom = ({ children, ...props }: OmniRoomProps) => {
 
 	return (
 		<div
-			{...props}
-			className={cn("fixed top-0 transition-top ease-linear duration-300", {
-				"-top-20": isHidden,
+			className={cn("fixed top-0 transition-top ease-linear duration-[400]", className,  {
+				[`-top-${hideDistance} ${hiddenClassNameStyle}`]: isHidden,
+				'hiddenHeadRoom': isHidden,
 			})}
 		>
 			{children}
@@ -45,7 +45,7 @@ export const HeadRoom = ({ children, ...props }: OmniRoomProps) => {
 
 
 // Nautical terminology, where ‘Port’ means Left
-export const PortRoom = ({ children, ...props }: OmniRoomProps) => {
+export const PortRoom = ({ children, hideDistance = "28", className, hiddenClassNameStyle }: OmniRoomProps) => {
 	const [lastScrollLeft, setLastScrollLeft] = useState(0);
 	const [isHidden, setIsHidden] = useState(false);
 
@@ -71,9 +71,9 @@ export const PortRoom = ({ children, ...props }: OmniRoomProps) => {
 
 	return (
 		<div
-			{...props}
-			className={cn("fixed left-0 transition-left ease-linear duration-300", {
-				"-left-20": isHidden,
+			className={cn("fixed left-0 transition-left ease-linear duration-[400]", className, {
+				[`-left-${hideDistance} ${hiddenClassNameStyle}`]: isHidden,
+				'hiddenPortRoom': isHidden,
 			})}
 		>
 			{children}
@@ -87,7 +87,7 @@ export const PortRoom = ({ children, ...props }: OmniRoomProps) => {
 
 
 // Nautical terminology, where ‘Starboard’ means Right
-export const StarboardRoom = ({ children, ...props }: OmniRoomProps) => {
+export const StarboardRoom = ({ children, hideDistance = "28", className, hiddenClassNameStyle }: OmniRoomProps) => {
 	const [lastScrollRight, setLastScrollRight] = useState(0);
 	const [isHidden, setIsHidden] = useState(false);
 
@@ -113,9 +113,9 @@ export const StarboardRoom = ({ children, ...props }: OmniRoomProps) => {
 
 	return (
 		<div
-			{...props}
-			className={cn("fixed right-0 transition-right ease-linear duration-300", {
-				"-right-20": isHidden,
+			className={cn("fixed right-0 transition-right ease-linear duration-[400]", className, {
+				[`-right-${hideDistance} ${hiddenClassNameStyle}`]: isHidden,
+				'hiddenStarboardRoom': isHidden,
 			})}
 		>
 			{children}
@@ -130,7 +130,7 @@ export const StarboardRoom = ({ children, ...props }: OmniRoomProps) => {
 
 
 
-export const FootRoom = ({ children, ...props }: OmniRoomProps) => {
+export const FootRoom = ({ children, hideDistance = "28", className, hiddenClassNameStyle }: OmniRoomProps) => {
 	const [lastScrollTop, setLatScrollTop] = useState(0);
 	const [isHidden, setIsHidden] = useState(false);
 
@@ -156,9 +156,9 @@ export const FootRoom = ({ children, ...props }: OmniRoomProps) => {
 
 	return (
 		<div
-			{...props}
-			className={cn("fixed bottom-0 transition-bottom ease-linear duration-300", {
-				"-bottom-20": isHidden,
+			className={cn("fixed bottom-0 transition-bottom ease-linear duration-[400]", className, {
+				[`-bottom-${hideDistance} ${hiddenClassNameStyle}`]: isHidden,
+				'hiddenFootRoom': isHidden,
 			})}
 		>
 			{children}
