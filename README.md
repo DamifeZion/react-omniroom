@@ -43,13 +43,4 @@ import BottomRoom from 'react-bottom-room';
 
 ## Contributing
 
-We welcome contributions to [react-bottom-room!](https://www.npmjs.com/package/react-bottom-room) If you have a feature request, bug report, or want to improve the library, feel free to open an issue or submit a pull request.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the React Bottom Room GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+We welcome contributions to [react-bottom-room!](https://www.npmjs.com/package/react-bottom-room) If you have a feature request, bug report, or want to improve the library, feel free to open an issue or submit a pull request on out github [the React Bottom Room GitHub repository](https://github.com/DamifeZion/react-bottom-room).
