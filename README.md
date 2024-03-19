@@ -18,7 +18,7 @@
   You can install react-bottom-room using npm:
 
   ```bash
-    npm install react-bottom-room
+    npm install react-omniroom
   ```
 
   ## Usage
