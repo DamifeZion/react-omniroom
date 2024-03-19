@@ -1,7 +1,10 @@
 {
-  "name": "react-bottomroom",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-bottom-room",
+  "version": "1.0.0",
+  "private": false,
+  "author": {"name": "Damife Olaleye-Martins", "email": "damifeolaleye@gmail.com", "url": "https://www.linkedin.com/in/damife-zion"},
+  "description": "React Bottom Room is a lightweight, easy-to-use React component that provides a dynamic bottom navigation bar for your web applications. Inspired by the react-headroom package, react-bottom-room hides your bottom navigation bar when scrolling down and reveals it when scrolling up, improving the user experience by maximizing screen real estate without sacrificing easy navigation access.\n\nKey Features:\n\nDynamic Visibility: The navigation bar automatically hides when scrolling down and shows when scrolling up, providing a clean and immersive user experience.\nEasy to Use: Just wrap your navigation bar component with react-bottom-room and it handles the rest.\nCustomizable: Supports all standard div attributes, allowing you to customize the navigation bar to fit your needs.\nLightweight: With a small footprint, it doesn’t add unnecessary weight to your project.\nWhether you’re building a single-page application or a complex web app, react-bottom-room offers a simple and effective solution for enhancing your bottom navigation.",
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,19 +12,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.1.0",
+    "next": "14.1.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.3"
+    "tw-merge": "^0.0.1-alpha.3"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.3",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.3"
+    "typescript": "^5"
   }
 }
