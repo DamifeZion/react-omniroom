@@ -1,10 +1,16 @@
 {
-  "name": "react-bottom-room",
-  "version": "1.0.0",
+  "name": "react-omniroom",
+  "version": "0.1.0",
   "private": false,
-  "author": {"name": "Damife Olaleye-Martins", "email": "damifeolaleye@gmail.com", "url": "https://www.linkedin.com/in/damife-zion"},
-  "description": "React Bottom Room is a lightweight, easy-to-use React component that provides a dynamic bottom navigation bar for your web applications. Inspired by the react-headroom package, react-bottom-room hides your bottom navigation bar when scrolling down and reveals it when scrolling up, improving the user experience by maximizing screen real estate without sacrificing easy navigation access.\n\nKey Features:\n\nDynamic Visibility: The navigation bar automatically hides when scrolling down and shows when scrolling up, providing a clean and immersive user experience.\nEasy to Use: Just wrap your navigation bar component with react-bottom-room and it handles the rest.\nCustomizable: Supports all standard div attributes, allowing you to customize the navigation bar to fit your needs.\nLightweight: With a small footprint, it doesn’t add unnecessary weight to your project.\nWhether you’re building a single-page application or a complex web app, react-bottom-room offers a simple and effective solution for enhancing your bottom navigation.",
-
+  "author": {
+    "name": "Damife Olaleye-Martins",
+    "email": "damifeolaleye@gmail.com",
+    "url": "https://www.linkedin.com/in/damife-zion"
+  },
+  "repository": {"url": "https://github.com/DamifeZion/react-omniroom"},
+  "homepage": "https://github.com/DamifeZion/react-omniroom",
+  "description": "React Omniroom is a lightweight, customizable React component that provides a dynamic navigation bar for web applications. It enhances user experience by maximizing screen real estate.",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

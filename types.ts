@@ -1,5 +1,6 @@
 import { HTMLAttributes, ReactNode } from "react";
 
-export interface BottomRoomProps extends HTMLAttributes<HTMLDivElement> {
-   children: ReactNode
+export interface OmniRoomProps extends HTMLAttributes<HTMLDivElement> {
+   children: ReactNode;
+   className?: string;
 }
