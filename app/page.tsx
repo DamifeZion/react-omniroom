@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 
 
-export const HeadRoom = ({ children, hideDistance = "28", className, hiddenClassNameStyle }: OmniRoomProps) => {
+export const HeadRoom = ({ children, hideDistance = "28", className, threshold = 100 ,hiddenClassNameStyle }: OmniRoomProps) => {
 	const [lastScrollTop, setLatScrollTop] = useState(0);
 	const [isHidden, setIsHidden] = useState(false);
 
@@ -12,7 +12,7 @@ export const HeadRoom = ({ children, hideDistance = "28", className, hiddenClass
 		const handleScroll = () => {
 			const scrollTop = window.scrollY;
 
-			if (scrollTop < lastScrollTop) {
+			if (scrollTop < threshold && lastScrollTop) {
 				setIsHidden(true);
 			} else {
 				setIsHidden(false);
@@ -26,7 +26,7 @@ export const HeadRoom = ({ children, hideDistance = "28", className, hiddenClass
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
-	}, [lastScrollTop]);
+	}, [lastScrollTop, threshold]);
 
 	return (
 		<div
@@ -47,7 +47,7 @@ export const HeadRoom = ({ children, hideDistance = "28", className, hiddenClass
 
 
 // Nautical terminology, where ‘Port’ means Left
-export const PortRoom = ({ children, hideDistance = "28", className, hiddenClassNameStyle }: OmniRoomProps) => {
+export const PortRoom = ({ children, hideDistance = "28", className, threshold = 100, hiddenClassNameStyle }: OmniRoomProps) => {
 	const [lastScrollLeft, setLastScrollLeft] = useState(0);
 	const [isHidden, setIsHidden] = useState(false);
 
@@ -55,7 +55,7 @@ export const PortRoom = ({ children, hideDistance = "28", className, hiddenClass
 		const handleScroll = () => {
 			const scrollLeft = window.scrollX;
 
-			if (scrollLeft < lastScrollLeft) {
+			if (scrollLeft < threshold &&  lastScrollLeft) {
 				setIsHidden(true);
 			} else {
 				setIsHidden(false);
@@ -69,7 +69,7 @@ export const PortRoom = ({ children, hideDistance = "28", className, hiddenClass
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
-	}, [lastScrollLeft]);
+	}, [lastScrollLeft, threshold]);
 
 	return (
 		<div
@@ -91,7 +91,7 @@ export const PortRoom = ({ children, hideDistance = "28", className, hiddenClass
 
 
 // Nautical terminology, where ‘Starboard’ means Right
-export const StarboardRoom = ({ children, hideDistance = "28", className, hiddenClassNameStyle }: OmniRoomProps) => {
+export const StarboardRoom = ({ children, hideDistance = "28", className, threshold = 100, hiddenClassNameStyle }: OmniRoomProps) => {
 	const [lastScrollRight, setLastScrollRight] = useState(0);
 	const [isHidden, setIsHidden] = useState(false);
 
@@ -99,7 +99,7 @@ export const StarboardRoom = ({ children, hideDistance = "28", className, hidden
 		const handleScroll = () => {
 			const scrollRight = window.scrollX;
 
-			if (scrollRight > lastScrollRight) {
+			if (scrollRight > threshold &&  lastScrollRight) {
 				setIsHidden(true);
 			} else {
 				setIsHidden(false);
@@ -113,7 +113,7 @@ export const StarboardRoom = ({ children, hideDistance = "28", className, hidden
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
-	}, [lastScrollRight]);
+	}, [lastScrollRight, threshold]);
 
 	return (
 		<div
@@ -134,7 +134,7 @@ export const StarboardRoom = ({ children, hideDistance = "28", className, hidden
 
 
 
-export const FootRoom = ({ children, hideDistance = "28", className, hiddenClassNameStyle }: OmniRoomProps) => {
+export const FootRoom = ({ children, hideDistance = "28", threshold = 100, className, hiddenClassNameStyle }: OmniRoomProps) => {
 	const [lastScrollTop, setLatScrollTop] = useState(0);
 	const [isHidden, setIsHidden] = useState(false);
 
@@ -142,7 +142,7 @@ export const FootRoom = ({ children, hideDistance = "28", className, hiddenClass
 		const handleScroll = () => {
 			const scrollTop = window.scrollY;
 
-			if (scrollTop > lastScrollTop) {
+			if (scrollTop > threshold &&  lastScrollTop) {
 			setIsHidden(true);
 			} else {
 			setIsHidden(false);
@@ -156,7 +156,7 @@ export const FootRoom = ({ children, hideDistance = "28", className, hiddenClass
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
-	}, [lastScrollTop]);
+	}, [lastScrollTop, threshold]);
 
 	return (
 		<div

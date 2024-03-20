@@ -51,6 +51,9 @@
 
   ```
 
+  ## Threshold
+  In the context of React OmniRoom, the threshold which default to 100, is a certain scroll distance that the user must exceed before the components start to hide. This means that the components will not hide immediately when the user starts scrolling, but only after they’ve scrolled past this threshold distance.
+
 
   ## Tailwind CSS
   React OmniRoom is designed to work seamlessly with Tailwind CSS, a utility-first CSS framework. This means you can use Tailwind’s utility classes to easily style and customize your navigation bars.

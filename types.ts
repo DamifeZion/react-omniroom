@@ -11,4 +11,5 @@ export interface OmniRoomProps extends HTMLAttributes<HTMLDivElement> {
    children: ReactNode;
    hideDistance: TailwindSpacing;
    hiddenClassNameStyle: "";
+   threshold: number;
 }
