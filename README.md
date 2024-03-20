@@ -7,7 +7,7 @@
 
   - Dynamic Visibility: The navigation bar automatically hides when scrolling down and shows when scrolling up, providing a clean and immersive user experience.
 
-  - Easy to Use: Simply wrap your navigation bar component with react-bottom-room and it handles the rest.
+  - Easy to Use: Simply wrap your navigation bar component with react-omniroom and it handles the rest.
 
   - Customizable: Supports all standard div attributes, allowing you to customize the navigation bar to fit your needs.
 
@@ -15,7 +15,7 @@
 
   ## Installation
 
-  You can install react-bottom-room using npm:
+  You can install react-omniroom using npm:
 
   ```bash
     npm install react-omniroom
@@ -23,7 +23,7 @@
 
   ## Usage
 
-  Here’s a basic example of how to use react-bottom-room in your application:
+  Here’s a basic example of how to use react-omniroom in your application:
 
   ``` bash
   import { HeadRoom, FootRoom, PortRoom, StarboardRoom } from 'react-omniroom';
