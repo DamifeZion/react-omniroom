@@ -44,6 +44,8 @@ export const HeadRoom = ({ children, hideDistance = "28", className, hiddenClass
 
 
 
+
+
 // Nautical terminology, where ‘Port’ means Left
 export const PortRoom = ({ children, hideDistance = "28", className, hiddenClassNameStyle }: OmniRoomProps) => {
 	const [lastScrollLeft, setLastScrollLeft] = useState(0);
@@ -80,6 +82,8 @@ export const PortRoom = ({ children, hideDistance = "28", className, hiddenClass
 		</div>
 	);
 };
+
+
 
 
 

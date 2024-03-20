@@ -70,4 +70,4 @@
 
   ## Contributing
 
-  We welcome contributions to [react-omniroom!](https://www.npmjs.com/package/react-omniroom) If you have a feature request, bug report, or want to improve the library, feel free to open an issue or submit a pull request on out github [the React Omniroom GitHub repository](https://github.com/DamifeZion/react-omniroom).
+  We welcome contributions to [react-omniroom!](https://www.npmjs.com/package/react-omniroom) If you have a feature request, bug report, or want to improve the library, feel free to open an issue or submit a pull request on our github [the React Omniroom GitHub repository](https://github.com/DamifeZion/react-omniroom).
