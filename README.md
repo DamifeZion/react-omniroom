@@ -5,7 +5,7 @@
 
   ## Key Features
 
-  - Dynamic Visibility: The bottom navigation bar automatically hides when scrolling down and shows when scrolling up, providing a clean and immersive user experience.
+  - Dynamic Visibility: The navigation bar automatically hides when scrolling down and shows when scrolling up, providing a clean and immersive user experience.
 
   - Easy to Use: Simply wrap your navigation bar component with react-bottom-room and it handles the rest.
 
